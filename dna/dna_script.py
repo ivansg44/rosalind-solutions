@@ -23,6 +23,8 @@ if __name__ == "__main__":
     parser.add_argument("input_file", help="Path to .txt file containing a "
                                            "DNA string of length at most 1000 "
                                            "nt.")
-    parser.add_argument("output_file", help="Path of file to write output to.")
+    parser.add_argument("output_file", help="Path of file to write respective "
+                                            "counts of 'A', 'C', 'G' and 'T' "
+                                            "belonging to input.")
     args = parser.parse_args()
     main(args.input_file, args.output_file)
