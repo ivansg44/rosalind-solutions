@@ -14,7 +14,7 @@ def fib(n, k):
 
 
 def _fib_helper(fn_1, fn_2, n, k):
-    if n == 0:
+    if n <= 0:
         return fn_1
 
     return _fib_helper(k*fn_2+fn_1, fn_1, n-1, k)
